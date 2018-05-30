@@ -44,7 +44,7 @@ app.get('/callback', (req, res) => {
 			.catch(function(error){
 				console.log(error)
 			})
-	}).catch(function(error){		
+	}).catch(function(error){			
 	});
 
 })

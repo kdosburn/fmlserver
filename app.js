@@ -3,10 +3,12 @@ const favicon = require('express-favicon')
 const path = require('path')
 const axios = require('axios')
 const querystring = require('querystring')
+const secret = require('./secret')
+
 const app = express()
 
 const client_id = '553dfbf2f3b748b080b06eb0e0bc8c34'
-const client_secret = '9d0ab0357f104661b3d254a808c4db83'
+const client_secret = 'NOPE'
 
 app.get('/', (req, res) => res.send('Hello, Kendra!!'))
 app.use(favicon(__dirname + '/images/public/favicon.ico'));
